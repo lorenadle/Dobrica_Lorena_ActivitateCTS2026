@@ -11,7 +11,6 @@ public class AdaptorEvaluareClient_Obiect implements IEvaluareClientFirmaB {
         this.evaluareClientFirmaA = evaluareClientFirmaA;
     }
 
-    //meth folosita pentru pregatire input pentru evaluare client firma A
     private int costTotalEvenimente(Client client){
         System.out.println("Transformare input din client in float(total)");
         int costTotalEvenimente = 0;
