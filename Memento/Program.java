@@ -7,7 +7,6 @@ public class Program {
 		ManagerContracte managerContracte = new ManagerContracte();
 		Contract contract = new Contract("Client1");
 		Contract contract2 = new Contract("Client2");
-		//salvare versiuni contracte
 		contract.adaugaClauzeContractuale("Clauza1");
 		System.out.println(contract);
 		contract.adaugaClauzeContractuale("Clauza2");
@@ -17,8 +16,7 @@ public class Program {
 		contract.adaugaClauzeContractuale("Clauza3");
 		System.out.println(contract);
 		managerContracte.adaugaVersiune(contract.salvare());
-		
-		//recuperare versiuni anterioare
+
 		contract.refacereVersiuneContractAnterior
 		(managerContracte.recuperareVersiune(0));
 		System.out.println(contract);

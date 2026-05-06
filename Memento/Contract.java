@@ -21,13 +21,13 @@ public class Contract {
 				+ ", numeClient=" + numeClient + "]";
 	}
 	
-	//restore from Memento
+
 	public void refacereVersiuneContractAnterior
 	(VersiuneContract versiuneContract){
 		this.clauzeContractuale = versiuneContract.getClauzeContractuale();
 	}
 	
-	//store into a Memento
+
 	public VersiuneContract salvare(){
 		System.out.println("Salvare versiune contract");
 		return new VersiuneContract(clauzeContractuale);
